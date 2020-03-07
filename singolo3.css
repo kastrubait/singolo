@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  width: 1020px;
+  background-color: #ffffff;
+  font-family: "Lato", serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.595;
+    letter-spacing: 0.5px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 0.992;
+    letter-spacing: 0.23px;
+    text-align: justifyLeft;
+}
+
+.quote-item {
+    background-color: #f06c64;
+    color: #f0d8d9;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 69px;  
+ }
+
+ .end {
+    font-size: 18px;
+    letter-spacing: -0.23px;
+    line-height: 1.667;
+    margin: 0px 0px 10px 0px;
+    padding-top: 27px;
+    text-align: justify;
+    padding-right: 20px;
+  }
+
+.form-item {
+    margin-top: 43px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-item {
+    width: 604px;
+    height: 38px;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    background-color: #d6564f;
+    line-height: 1.797;
+    text-align: justifyLeft;
+    font-size: 12px;
+    padding-left: 13px;
+}
+
+.ta-item {
+    width: 604px;
+    height: 193px;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    background-color: #d6564f;
+    line-height: 1.797;
+    text-align: justifyLeft;
+    font-size: 12px;
+    padding-left: 13px;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+input::placeholder { 
+    color: rgb(244, 140, 143); 
+} 
+
+textarea::placeholder { 
+    color: rgb(244, 140, 143);
+    letter-spacing: 0.05px;
+} 
+.sub-item {
+    width: 104px;
+    height: 38px;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    margin-left: 513px;
+    background-color: #f0d8d9;
+    color:  #d6564f;
+    line-height: 1.797;
+    text-align: justifyLeft;
+    font-size: 14px;
+}
+
+.footer-item {
+    height: 76px;
+    background-color: rgb(45, 48, 58);
+    color: #767e9e;
+    font-size: 12px;
+    padding-left: 40px;
+    padding-right: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+object {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px; 
+}
+
+.small {
+    width: 11px;
+    height: 11px;
+    margin-right: 11px; 
+}
+
+object:hover {
+    border-radius: 15px;
+    background: #f06c64;
+ }
+  
+.contact {
+    width: 300px;
+    color: rgb(240, 216, 217);
+    text-align: justifyLeft;
+}
+  
+.description {
+    font-size: 12px;
+    letter-spacing: -0.069px;
+    line-height: 1.91;
+    padding-top: 11px;
+    text-align: justify;
+}
+
+.sbg-bottom {
+    background-color: #ea676b;
+    height: 5px;
+ }
+  
+  
