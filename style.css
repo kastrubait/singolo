@@ -12,6 +12,7 @@ font-family: "Lato", serif;
 header {
   height: 90px;
   background-color: #2d303a;
+  width: 1020px;
 }
 
 .right {
@@ -21,6 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  
 }
 
 .bull {
@@ -45,6 +47,11 @@ a.nav:first-child {
 a.nav:hover, a.nav:focus {
   color: #767e9e;
   font-weight: bold;
+}
+
+a:-webkit-any-link {
+  color: #f2f2f2;
+  text-decoration: underline;
 }
 
 a.nav-act {
@@ -80,11 +87,17 @@ a.nav-act {
   padding-top: 52px;
   padding-bottom: 62px;
   display: flex;
-  justify-content: space-between;
+ /* justify-content: space-between;*/
 }
 
-.a-butt-item {
-  padding-right: 0px;
+.slide2 {
+  position: absolute;
+  top: 95px;
+  left: 0px;
+  width: 1020px;
+  height: 600px;
+  visibility: hidden;
+  z-index: 1000;
 }
 
 .sl-butt-l {
@@ -94,48 +107,62 @@ a.nav-act {
 }
 
 .sl-butt-r {
-  margin-left: 52px;
+  margin-left: 855px;
   margin-right: 41px;
-  margin-bottom: 107px;
+  margin-top: 229px;
+}
+
+#rigth {
+  position: relative;
+  left: 270px;
+  visibility: visible;
 }
 
 .sl-middle-r {
-  /*position: absolute;*/
-  margin-top: 122px;
-  margin-left: 50px;
-}
-
-.sl-middle-l {
-   position: absolute;
-}
- 
-.fon-middle-l {
   position: absolute;
-  margin-top: 62px;
-  margin-left: 11px;
-  z-index: 99999;
+  top: 122px;
+  left: 50px;
+  z-index: 900;
 }
 
 .fon-middle-r {
   position: absolute;
-  margin-top: 133px;
-  margin-left: -540px;
-  z-index: 99999;
+  top: 133px;
+  left: 110px;
+  z-index: 901;
+}
+
+#left {
+  position: relative;
+  left: 0px;
+  visibility: visible;
+}
+
+.sl-middle-l {
+   position: absolute;
+   z-index: 997;
+}
+ 
+.fon-middle-l {
+  position: absolute;
+  top: 62px;
+  left: 11px;
+  z-index: 998;
 }
 
 .hbutt-l {
   position: absolute;
-  margin-top: 406px;
-  margin-left: 85px;
-  z-index: 99999;
+  top: 406px;
+  left: 85px;
+  z-index: 999;
 }
 
 
 .hbutt-r {
   position: absolute;
-  margin-top: 206px;
-  margin-left: -590px;
-  z-index: 99999;
+  top: 206px;
+  left: 56px;
+  z-index: 999;
 }
 
 .services {
@@ -280,6 +307,12 @@ p {
   border: 1px solid #dedede;
 }   
 */
+a.nav-item-act {
+  color:#dedede;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+}
+
 a.nav-item:hover, a.nav-item:focus, a.nav-item:active {
         color:#dedede;
         border-radius: 5px;
@@ -317,8 +350,8 @@ object:hover {
  }
 
  .portfolio-img {
-    width: 210px;
-    height: 177px;
+    width: 220px;
+    height: 187px;
     border: 5px solid #F06C64;
  }
 
@@ -329,8 +362,11 @@ object:hover {
 
 .col-4 {
     width: 220px;
+    height: 187px;
     margin-right: 20px;
     margin-bottom: 17px;
+    border: 5px;
+    border-color: transparent;
     list-style-type: none;
     float: left;
 }
@@ -440,26 +476,55 @@ textarea::placeholder {
   font-size: 14px;
 }
 
+#cl-btn {
+  width: 84px;
+  height: 28px;
+  border: 0px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-left: 200px;
+  background-color: #f0d8d9;
+  color:  #d6564f;
+  line-height: 1.797;
+  text-align: justifyLeft;
+  font-size: 14px;
+}
+
 #message-block {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  top: 0.001;
+  top: 0;
   left: 0;
   background: rgb(244, 140, 143, 0.4);
+  z-index: 999999;
 }
 
 #message {
   position: absolute;
-  top: 35%;
-  left: 50%;
+  top: 20%;
+  left: 30%;
+  width: 30%;
   padding:5px;
   border: 1px solid #2d303a;
+  border-radius: 5px;
   background: rgb(244, 140, 143, 0.9);
 }
 
+h5 {
+  color: #2d303a;
+}
 .mess-item {
-  font-family: "Lato";
+  font-size: 16px;
+  letter-spacing: -0.23px;
+  padding: 0px;
+  text-align: justify;
+}
+
+#subjectImp, #textareaImp {
+  font-size: 18px;
+  font-style: italic;
+  color: #2d303a;
 }
 
 #message-block.hidden {
