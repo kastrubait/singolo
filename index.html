@@ -10,9 +10,9 @@
 <body>
    <header>
       <nav class="right">
-        <div class="logo">SINGOLO<span class="red">*</span></div>
+        <div class="logo" id='home'>SINGOLO<span class="red">*</span></div>
         <div class="nav-r" id="menu">
-             <a href='#' class="nav">HOME</a><a class="bull">&bull;</a>
+             <a href='#home' class="nav">HOME</a><a class="bull">&bull;</a>
              <a href='#services' class="nav">SERVICES</a><a class="bull">&bull;</a>  
              <a href='#portfolio' class="nav">PORTFOLIO</a><a class="bull">&bull;</a>  
              <a href='#about' class="nav">ABOUT</a><a class="bull">&bull;</a>
@@ -24,24 +24,26 @@
       <section class="hbg-bottom">
       </section>
       <section class="slider">
-         <div>
-            <a href="#" class="a-butt-item"><img src="assets/chevl.png" alt="left" class="sl-butt-l" > </a>
+        <img src="assets/slide2.png" alt="slide" class="slide2" >
+        <a href="#" class="a-butt-item"><img src="assets/chevl.png" alt="left" class="sl-butt-l" id='but_L'> </a>
+        <div id='left'>
            <img src="assets/iPhoneV_new.png" alt="iPhone Vertical" class="sl-middle-l" >
            <img src="assets/PV_img.png" alt="iPhone fon" class="fon-middle-l" id='fon-left'>
            <a id="hbl"><img src="assets/HButt.png" alt="iPhone fon" class="hbutt-l" ></a>
  
          </div>
-         <div>
+         <div id='rigth'>
             <img src="assets/iPhoneH_new.png" alt="iPhone Horisontal" class="sl-middle-r">
-            <a href="#" class="a-butt-item"><img src="assets/chevr.png" alt="right" class="sl-butt-r"></a>
             <img src="assets/PH_img.png" alt="iPhone fon" class="fon-middle-r" id='fon-rigth'>
             <a id="hbr"><img src="assets/HButt.png" alt="iPhone fon" class="hbutt-r" ></a>
          </div>
+         <a href="#" class="a-butt-item"><img src="assets/chevr.png" alt="right" class="sl-butt-r" id='but_R'></a>
       </section>
       <section class="sbg-bottom"> 
       </section>
+      <a class="anchor" id="services"></a>
       <section class="services">
-            <h1 id='services'>Our Services</h1>
+            <h1 >Our Services</h1>
             <p class="resum">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
              Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.  
@@ -81,8 +83,9 @@
         </section>
         <section class="bg-bottom">
         </section>
+        <a class="anchor" id="portfolio"></a>
         <section class="title-item">
-            <h1 id='portfolio'>Portfolio</h1>
+            <h1 >Portfolio</h1>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div id='nav-item'>
                 <a class="nav-item">All</a>
@@ -144,8 +147,9 @@
         </section>
         <section class="pbg-bottom">
         </section>
+        <a class="anchor" id="about"></a>
         <section class="about-item">
-            <h1 id='about'>About Us</h1>
+            <h1 >About Us</h1>
             <p class="end">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, 
                 non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, 
                 tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -192,6 +196,7 @@
         </section>
         <section class="bg-bottom">
         </section>
+        <a class="anchor" id="contact"></a>
         <section class="quote-item">
             <h1 >Get a Quote</h1>
             <p class="end_q">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, 
@@ -199,15 +204,15 @@
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
             </p>
             <div class="form-item">
-                <form action="#" method="post" >
-                    <input type="text" name="name" placeholder="Name (Required)" required class="input-item"><br>
-                    <input type="email" name="email" placeholder="Email (Required)" required class="input-item"><br>
+                <form >
+                    <input type="text" name="name" placeholder="Name (Required)" required class="input-item" id="name"><br>
+                    <input type="email" name="email" placeholder="Email (Required)" required class="input-item" id="email"><br>
                     <input type="text" name="subject" placeholder="Subject" class="input-item" id="subject"><br>
                     <textarea placeholder="Describe your project in detail..." class="ta-item" id="describe"></textarea><br>
                     <button class="sub-item" id='btn'>SEND</button>
                 </form>
                 <div class="contact">
-                    <h4 id='contact'>Contact Information</h4>
+                    <h4 >Contact Information</h4>
                     <p class="description_q">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. 
                     Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor 
                     luctus faucibus. Morbi at aliquet turpis, et consequat felis. 
@@ -218,11 +223,11 @@
                     </p>
                 </div>
                 <div id="message-block" class="hidden">
-                    <div id='message' class="mess-item">
-                        <p>Письмо отправлено</p>
-                        <p>Tема: <span id='tm'></span></p>
-                        <p>Описание: <span id='ds'></span></p>
-                        <button id='cl-btn'>OK</button>
+                    <div id='message' >
+                        <h5 class="mess-item">The letter was sent</h5>
+                        <p class="mess-item">Subject: <span id='subjectImp'></span></p>
+                        <p class="mess-item">Description: <span id='textareaImp'></span></p>
+                        <button id='cl-btn' class="sub-item">OK</button>
                     </div>
                 </div>
             </div>
